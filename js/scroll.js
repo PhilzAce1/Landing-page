@@ -1,3 +1,8 @@
+const loader = document.querySelector('#loader');
+document.body.onload = function () {
+  loader.classList.remove('loader');
+  loader.classList.add('none');
+};
 $(function () {
   $(window).on('load resize', function () {
     $('.fill-screen').css('height', window.innerHeight);
